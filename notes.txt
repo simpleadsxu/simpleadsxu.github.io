@@ -2,7 +2,8 @@
 jekyll new myblog
 cd myblog
 
-set JEKYLL_ENV=production 
+gem install
+
 jekyll build
 bundle exec jekyll serve
 
