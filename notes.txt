@@ -1,0 +1,27 @@
+
+jekyll new myblog
+cd myblog
+
+set JEKYLL_ENV=production 
+jekyll build
+bundle exec jekyll serve
+
+
+PLUGINS:
+
+source 'https://rubygems.org'
+
+gem 'jekyll'
+
+group :jekyll_plugins do
+  gem 'jekyll-sitemap'
+  gem 'jekyll-feed'
+  gem 'jekyll-seo-tag'
+end
+
+
+-----------------------
+- To add a post: add to _posts
+- to turn on diff pivot, edit _data/navigation.yml
+- _config.yml: is the main file
+- to deploy: _site
