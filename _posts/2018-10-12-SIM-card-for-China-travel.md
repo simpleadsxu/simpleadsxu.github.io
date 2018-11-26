@@ -3,7 +3,7 @@ layout: single
 title:  "中国行之手机攻略"
 date:   2018-11-26 15:03:38 -0400
 author: JS
-categories: web
+categories: travel
 tags:
   - mobile
   - chinese
