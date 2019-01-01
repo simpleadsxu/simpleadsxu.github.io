@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Using Highcharts on Web"
+title:  "Pi Hole and Pi VPN on Raspberry Pi"
 date:   2019-01-01 15:03:38 -0400
 author: JS
 categories: web
