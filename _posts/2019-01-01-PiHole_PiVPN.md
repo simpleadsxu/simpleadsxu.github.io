@@ -30,7 +30,7 @@ The next step is to let all VPN connection go through our new DNS server (PiHole
 With all this, the combination of OpenVPN + PiHole should work now. To test if it works, you should be able see your log under "Query Log". The connection from OpenVPN is often from its own subnet like 10.8.0.*.
 
 ## Publish IP 
-One bonus point is how to know what IP address to connect to, as most of our IPs are not static. I used to have a simple script which sends an email to myself whenever the IP changes. This time, I find a free dynamic DNS host provider [DuckDNS](https://www.duckdns.org/). All you need to do is to register your IP with a subdomain like ``XXX.duckdns.org''. On your Pi, add a recurring schedule (e.g., using cron) to update your IP to DuckDNS every few minutes. Now you can use ``XXX.duckdns.org'' for VPN connection. 
+One bonus point is how to know what IP address to connect to, as most of our IPs are not static. I used to have a simple script which sends an email to myself whenever the IP changes. This time, I find a free dynamic DNS host provider [DuckDNS](https://www.duckdns.org/). All you need to do is to register your IP with a subdomain like ''XXX.duckdns.org''. On your Pi, add a recurring schedule (e.g., using cron) to update your IP to DuckDNS every few minutes. Now you can use ''XXX.duckdns.org'' for VPN connection. 
 
 ## Lastly
 One potential drawback of using Raspberry Pi is its network speed. With an USB wifi dongle, I am able to achieve ~10Mbits/Sec. But it is still enough for watching Youtube or surfing on internet. I might consider an upgrade once both Pi's network adapter and I/O got upgraded. So far, I can live with that.
