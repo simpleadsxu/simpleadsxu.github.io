@@ -13,16 +13,16 @@ header:
 excerpt: Host DNS/VPN on Raspebrry Pi.
 ---
 
-My little Raspberry Pi has been sitting the corner for a while now with all the dust. Until recently, PiHole showed up in one of my friends' blog. It is a lightweighted DNS server with the a nice Web interface to easily block certain DNSs (mostly for ads). 
+My little Raspberry Pi has been sitting at the corner for a while now with all the dust. Until recently, PiHole showed up in one of my friends' blog. It is a lightweighted DNS server with the a nice Web interface to easily block certain DNSs (mostly for ads). Another idea I wanted to test out is to set up my own VPN, for security purpose.
 
-I declare no expertise in internet stuff like DNS or VPN. Below are some notes collected so far, and they works!
+I declare no expertise in internet stuff like DNS or VPN. Below are some notes collected so far, and they work!
 
 ## Pi Hole
 It sounds fun and it is fairly easy to setup. I will cut the steps here, as there are a quite a few very good instructions (e.g., [this one](https://mall.10046.mi.com/fanscard/index)). After setup, you will have this nice dashboard to monitor all the activities.
 ![PiHole](/assets/images/PiHole.jpg)
 
 ## Pi VPN
-VPN is another thing I wanted to setup. My router is a bit old, which only support PPTP. That's said to be less secure nowadays. [PIVPN](http://www.pivpn.io/) is a customized (or say optimized) OpenVPN. Again, many helpful instructions (e.g. [this one](https://www.smarthomeblog.net/raspberry-pi-vpn/)) are available. 
+VPN is another thing I wanted to setup. My router is a bit old, which only supports PPTP. That's said to be less secure nowadays. [PIVPN](http://www.pivpn.io/) is a customized (or say optimized) OpenVPN. Again, many helpful instructions (e.g. [this one](https://www.smarthomeblog.net/raspberry-pi-vpn/)) are available. 
 
 ## Combining the Two
 The next step is to let all VPN connection go through our new DNS server (PiHole). For this one, the shared information on-line varies quite a lot. [This one](https://forum.xda-developers.com/showpost.php?p=76023719&postcount=5) works for me, at least. 
